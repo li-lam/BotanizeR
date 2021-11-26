@@ -4,7 +4,7 @@
 [![licence](https://img.shields.io/badge/Licence-GPL--3-blue.svg)](https://www.r-project.org/Licenses/GPL-3)  
 <br>
 
-This is a test line 2.
+This is a test line 3.
 
 
 BotanizeR is an R-package with Shiny app designed to help botany students and 
