@@ -1,0 +1,39 @@
+Package: BotanizeR
+Type: Package
+Title: BotanizeR quiz for memorizing the plant species
+Version: 0.1.0
+Authors@R: c(
+  person("Patrick", "Weigelt", email = "weigelt.patrick@gmail.com",
+    role = c("aut" , "cre"), comment = c(ORCID = "0000-0002-2485-3708")),
+  person("Pierre", "Denelle", email = "pierre.denelle@gmail.com",
+    role = c("aut"), comment = c(ORCID = "0000-0001-5037-2281"))
+  )
+Description: BotanizeR is an R-package with Shiny app designed to help botany students and other people interested in plants to learn and distinguish plant diagnostic characters, memorize plant species, and train their identification skills.
+Depends:
+  R (>= 3.5.3)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports:
+  dplyr,
+  htmltools,
+  httr,
+  imager,
+  magick,
+  rgbif,
+  rgeos,
+  sf,
+  shiny,
+  shinyBS,
+  shinyFiles,
+  shinythemes,
+  shinyjs,
+  slickR,
+  sp,
+  XML
+URL: https://patrickweigelt.github.io/BotanizeR/
+RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
