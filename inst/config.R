@@ -78,7 +78,7 @@ system_path <- "C:/Users/allog/Documents/R/BotanizeR/"
 # R package including a comprehensive species list of Germany and Great Britain 
 # will be loaded.
 
-species_list_path <- "data/BotanizeR_species.csv"
+species_list_path <- "data/PollinatorR_species.csv"
 
 
 ### Species list filters
