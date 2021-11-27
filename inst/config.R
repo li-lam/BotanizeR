@@ -13,7 +13,7 @@
 
 # Set to FALSE if setup tab shall be hidden.
 
-setup <- TRUE 
+setup <- FALSE 
 
 
 ### Shall online resources in setup tab be shown?
