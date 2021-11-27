@@ -21,7 +21,7 @@ setup <- FALSE
 # Set to FALSE if content from online resources like www.floraweb.de or  
 # https://www.brc.ac.uk/plantatlas/ shall be removed from setup tab.
 
-online_resources <- TRUE 
+online_resources <- FALSE 
 
 
 ### Shall subsetting by GBIF occurrences be available?
@@ -30,7 +30,7 @@ online_resources <- TRUE
 # gbif occurrences for a user-defined radius around user-defined coordinates
 # shall not be available in the setup tab.
 
-gbif <- TRUE
+gbif <- FALSE
 
 
 ### Dynamic species sampling probabilities
@@ -64,7 +64,7 @@ BotanizeR_URL <- "https://gift.uni-goettingen.de/shiny/BotanizeR/"
 # the app (species list location, image locations), add it as a character 
 # string here (e.g. "~/ShinyApps/BotanizeR/")
 
-system_path <- ""
+system_path <- "C:/Users/allog/Documents/R/BotanizeR/images"
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
