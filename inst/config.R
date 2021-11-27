@@ -64,7 +64,7 @@ BotanizeR_URL <- "https://gift.uni-goettingen.de/shiny/BotanizeR/"
 # the app (species list location, image locations), add it as a character 
 # string here (e.g. "~/ShinyApps/BotanizeR/")
 
-system_path <- "C:/Users/allog/Documents/R/BotanizeR/images"
+system_path <- "C:/Users/allog/Documents/R/BotanizeR/"
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
@@ -78,7 +78,7 @@ system_path <- "C:/Users/allog/Documents/R/BotanizeR/images"
 # R package including a comprehensive species list of Germany and Great Britain 
 # will be loaded.
 
-species_list_path <- ""
+species_list_path <- "data/PollinatorR_species.csv"
 
 
 ### Species list filters
