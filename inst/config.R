@@ -89,8 +89,11 @@ species_list_path <- "data/PollinatorR_species.csv"
 # "All species" the only option shown in the species list drop down of the setup
 # tab will be "All species" and no filtering will be possible.
 
-species_list_filter <- c("All species","Germany","Germany_BioDiv",
-                         "UK_Ireland","UK_Ireland_Sussex")
+#species_list_filter <- c("All species","Germany","Germany_BioDiv",
+#                         "UK_Ireland","UK_Ireland_Sussex")
+
+species_list_filter <- "All species"
+
 
 
 ### Species list
@@ -98,7 +101,9 @@ species_list_filter <- c("All species","Germany","Germany_BioDiv",
 # Define species list selected at the start (needs to be one out of 
 # species_list_filter). If set to "All species" no filter will be applied.
 
-species_list_selected <- "UK_Ireland_Sussex" 
+#species_list_selected <- "UK_Ireland_Sussex" 
+species_list_selected <- "All species"
+
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
@@ -111,8 +116,8 @@ species_list_selected <- "UK_Ireland_Sussex"
 # FALSE but setup and online_resources are set to TRUE above, the online
 # resources can be activated by the user within the setup tab.
 
-image_floraweb <- TRUE
-image_ukplantatlas <- TRUE
+image_floraweb <- FALSE
+image_ukplantatlas <- FALSE
 
 
 ### Images from folder
@@ -124,7 +129,7 @@ image_ukplantatlas <- TRUE
 # include the species names in their file names using " " or "_" to delimit 
 # genus and epithet.
 
-image_folders <- NULL
+image_folders <- c("images/Adalia bipunctata", "images/Adelphocoris lineolatus")
 
 
 ### Images from image link columns
@@ -134,8 +139,8 @@ image_folders <- NULL
 # imagelink_2 etc. and can be enabled and disabled in the setup tab if setup is 
 # set to TRUE above.
 
-# imagelinks_custom <- NULL
-imagelinks_custom <- c("imagelink_1", "imagelink_2")
+ imagelinks_custom <- NULL
+#imagelinks_custom <- c("imagelink_1", "imagelink_2")
 
 
 ### Hints from online resources
@@ -150,9 +155,9 @@ hints_floraweb <- NULL
 #hints_floraweb <- c("map","description", "status", "habitat", "family",
 #                   "German name")
 
-# hints_ukplantatlas <- NULL
-hints_ukplantatlas <- c("mapuk","familyuk","ecology","statusuk","trends",
-                        "perennation","lifeform","woodiness","clonality")
+ hints_ukplantatlas <- NULL
+#hints_ukplantatlas <- c("mapuk","familyuk","ecology","statusuk","trends",
+#                        "perennation","lifeform","woodiness","clonality")
 
 
 ### Hints from own hint columns
@@ -161,8 +166,8 @@ hints_ukplantatlas <- c("mapuk","familyuk","ecology","statusuk","trends",
 # Column names need to be named like ownhint_HintName. If set to NULL but setup
 # is TRUE above, the hints can be activated by the user within the setup tab.
 
-# hints_custom <- NULL
-hints_custom <- c("ownhint_English_name", "ownhint_French_name")
+ hints_custom <- NULL
+#hints_custom <- c("ownhint_English_name", "ownhint_French_name")
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
