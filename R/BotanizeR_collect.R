@@ -89,8 +89,10 @@
 #' data(BotanizeR_species)
 #' 
 #' # Select Acer campestre
-#' species_row = BotanizeR_species[which(BotanizeR_species$SPECIES ==
-#'                                         "Acer campestre"),]
+
+
+species_row = PollinatorR_species[which(PollinatorR_species$SPECIES == "Adalia bipunctata"),]
+
 #' 
 #' 
 #' # only ukplantatlas image(s) + hints + map
