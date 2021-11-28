@@ -90,8 +90,8 @@
 #' 
 #' # Select Acer campestre
 
-
-species_row = PollinatorR_species[which(PollinatorR_species$SPECIES == "Adalia bipunctata"),]
+#suspicious checkpoint
+#species_row = PollinatorR_species[which(PollinatorR_species$SPECIES == "Adalia bipunctata"),]
 
 #' 
 #' 
