@@ -1354,7 +1354,7 @@ shinyServer(function(input, output, session) {
                 "<br>",
                 "Click 'Answer' or hit 'Arrow down' to retrieve answer.",
                 "<br>", 
-                "Click 'New plant' or hit 'Arrow up' for next species."))
+                "Click 'New pollinator' or hit 'Arrow up' for next species."))
         })
         
         updateTextInput(session, "sp_answer", "Species name", value = "")
@@ -1682,10 +1682,15 @@ shinyServer(function(input, output, session) {
                 }
                 
                 tryagain <- "Try Again."
+#                output$answer_status <- renderUI(HTML(paste0(
+#                    "<font color=\"#FF0000\">", tryagain,
+#                    "</font><font color=\"#00CC00\"><br>",
+#                    genus_correct, "</font></br>")))
+                
+                
                 output$answer_status <- renderUI(HTML(paste0(
-                    "<font color=\"#FF0000\">", tryagain,
-                    "</font><font color=\"#00CC00\"><br>",
-                    genus_correct, "</font></br>")))
+                  "<font color=\"#FF0000\">", tryagain,
+                  "</font></br>")))
             }
         })
     })
@@ -1768,14 +1773,14 @@ shinyServer(function(input, output, session) {
             barplot_stats_session <- c(session_count, session_score)
             names(barplot_stats_session) <- c("Count", "Score")
             
-            barplot_stats_all <- c(total_count, total_score)
-            names(barplot_stats_all) <- c("Count", "Score")
+#            barplot_stats_all <- c(total_count, total_score)
+#            names(barplot_stats_all) <- c("Count", "Score")
             
             par(mfrow = c(1, 2), lwd = 2)
             barplot(barplot_stats_session, col = c("grey", "chartreuse3"),
                     main = "Current session")
-            barplot(barplot_stats_all, col = c("grey", "chartreuse3"),
-                    main = "Total")
+#           barplot(barplot_stats_all, col = c("grey", "chartreuse3"),
+#                    main = "Total")
         })
         
         output$stats_text <- renderPrint({
@@ -1783,11 +1788,11 @@ shinyServer(function(input, output, session) {
                         session_count,
                         "</b> species ", 
                         "and got <b>", session_score, 
-                        "</b> right.", "</br><br>",
-                        "In total, you practised <b>", total_species,
-                        "</b> unique species out of <b>",no_species, 
-                        "</b> ones and got <b>", no_species_right, 
-                        "</b> of them right at least once.</br>"))
+                        "</b> right.", "</br><br>"))
+#                        "In total, you practised <b>", total_species,
+#                        "</b> unique species out of <b>",no_species, 
+#                        "</b> ones and got <b>", no_species_right, 
+#                        "</b> of them right at least once.</br>"))
         })
         
         
@@ -1807,10 +1812,10 @@ shinyServer(function(input, output, session) {
                 uiOutput("stats_text"),
                 plotOutput("stats_barplot"),
                 footer = tagList(
-                    actionButton("twitter_share",
-                                 label = "Share",
-                                 icon = icon("twitter"),
-                                 onclick = sprintf("window.open('%s')", url)),
+#                    actionButton("twitter_share",
+#                                 label = "Share",
+#                                 icon = icon("twitter"),
+#                                 onclick = sprintf("window.open('%s')", url)),
                     modalButton('Close'))
             )
         )
