@@ -487,23 +487,23 @@ BotanizeR_quiz <- function(
             }
           }
           
-          if(species != attempt & attempt != "skip" & attempt != "exit"){
-            if(case_sensitive){
-              message(adist(attempt, species), " ",
-                      ifelse(adist(attempt, species) > 1,
-                             "characters", "character"), " different\n",
-                      ifelse(strsplit(attempt, " ")[[1]][1] ==
-                               species_list$GENUS[i], "Genus correct\n", "")) 
-            } else {
-              message(adist(attempt, species), " ",
-                      ifelse(adist(attempt, species) > 1, "characters",
-                             "character"), " different\n",
-                      ifelse(strsplit(attempt, " ")[[1]][1] ==
-                               tolower(species_list$GENUS[i]),
-                             "Genus correct\n", "")) 
-            }
-          }
-        }
+#          if(species != attempt & attempt != "skip" & attempt != "exit"){
+#            if(case_sensitive){
+#              message(adist(attempt, species), " ",
+#                      ifelse(adist(attempt, species) > 1,
+#                             "characters", "character"), " different\n",
+#                      ifelse(strsplit(attempt, " ")[[1]][1] ==
+#                               species_list$GENUS[i], "Genus correct\n", "")) 
+#            } else {
+#              message(adist(attempt, species), " ",
+#                      ifelse(adist(attempt, species) > 1, "characters",
+#                             "character"), " different\n",
+#                      ifelse(strsplit(attempt, " ")[[1]][1] ==
+#                               tolower(species_list$GENUS[i]),
+#                             "Genus correct\n", "")) 
+#            }
+#          }
+#        }
         if(species == attempt | attempt == "skip" | attempt == "exit" |
            attempts >= max_attempts){
           if(attempt == "skip" | attempt == "exit"){
