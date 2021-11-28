@@ -503,7 +503,7 @@ BotanizeR_quiz <- function(
 #                             "Genus correct\n", "")) 
 #            }
 #          }
-#        }
+        }
         if(species == attempt | attempt == "skip" | attempt == "exit" |
            attempts >= max_attempts){
           if(attempt == "skip" | attempt == "exit"){
