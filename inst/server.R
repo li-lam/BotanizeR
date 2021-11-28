@@ -783,7 +783,7 @@ shinyServer(function(input, output, session) {
     
     # Dynamic dropdown
     output$select_plant <- renderUI({
-        selectizeInput("plant_list", "Plant list",
+        selectizeInput("plant_list", "Pollinator List",
                        choices = species_list_reactive$df_data$SPECIES,
                        selected = species_list_reactive$df_data$SPECIES[1],
                        options = list(maxOptions = length(
