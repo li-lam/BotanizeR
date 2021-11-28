@@ -1681,8 +1681,9 @@ shinyServer(function(input, output, session) {
                     genus_correct <- "" 
                 }
                 
+                tryagain <- "Try Again."
                 output$answer_status <- renderUI(HTML(paste0(
-                    "<font color=\"#FF0000\">", char_diff,
+                    "<font color=\"#FF0000\">", tryagain,
                     "</font><font color=\"#00CC00\"><br>",
                     genus_correct, "</font></br>")))
             }
