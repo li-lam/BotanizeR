@@ -1680,11 +1680,11 @@ shinyServer(function(input, output, session) {
 #                } else {
 #                    genus_correct <- "" 
 #                }
-#                
-#                output$answer_status <- renderUI(HTML(paste0(
-#                    "<font color=\"#FF0000\">", char_diff,
-#                    "</font><font color=\"#00CC00\"><br>",
-#                    genus_correct, "</font></br>")))
+                
+                output$answer_status <- renderUI(HTML(paste0(
+                    "<font color=\"#FF0000\">", char_diff,
+                    "</font><font color=\"#00CC00\"><br>",
+                    genus_correct, "</font></br>")))
             }
         })
     })
