@@ -1109,7 +1109,7 @@ shinyServer(function(input, output, session) {
     
     output$quiz_options <- renderUI({
         checkboxGroupInput(
-            inputId = "quiz_options", label = "Show:",
+            inputId = "quiz_options", label = " ",
             choices = 
                 name_hints(c(hints_floraweb_lookup$show[which(
                     hints_floraweb_lookup$variable %in% 
