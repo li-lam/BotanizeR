@@ -1672,14 +1672,14 @@ shinyServer(function(input, output, session) {
                 
                 genus <- species_list_reactive$df_data[isolate(i$i), "GENUS"]
                 
-#                if(nchar(answer)>0){
-#                    genus_correct <- paste0(
-#                        ifelse(strsplit(tolower(answer), " ")[[1]][1] == 
-#                                   tolower(genus), "Genus correct<br>",
-#                               "<br>"))
-#                } else {
-#                    genus_correct <- "" 
-#                }
+                if(nchar(answer)>0){
+                    genus_correct <- paste0(
+                        ifelse(strsplit(tolower(answer), " ")[[1]][1] == 
+                                   tolower(genus), "Scientific name correct!<br>",
+                               "<br>"))
+                } else {
+                    genus_correct <- "" 
+                }
                 
                 output$answer_status <- renderUI(HTML(paste0(
                     "<font color=\"#FF0000\">", char_diff,
