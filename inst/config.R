@@ -78,6 +78,7 @@ system_path <- "C:/Users/allog/Documents/R/BotanizeR/"
 # R package including a comprehensive species list of Germany and Great Britain 
 # will be loaded.
 
+#does this csv change into df format?
 species_list_path <- "data/PollinatorR_species.csv"
 
 
