@@ -1351,7 +1351,7 @@ shinyServer(function(input, output, session) {
         output$answer_status <- renderUI({
             HTML(paste0(
                 "Mark your answer and click 'Submit' or hit 'Enter'!",
-                "<br>",
+                "<br>","<br>",
                 "Click 'Answer' or hit 'Arrow down' to retrieve answer.",
                 "<br>", 
                 "Click 'New pollinator' or hit 'Arrow up' for next species."))
@@ -1607,10 +1607,10 @@ shinyServer(function(input, output, session) {
             HTML(
                 paste0(
                     "Mark your answer and click 'Submit' or hit 'Enter'!",
-                    "<br>",
+                    "<br>","<br>",
                     "Click 'Answer' or hit 'Arrow down' to retrieve answer.",
-                    "<br>", 
-                    "Click 'New plant' or hit 'Arrow up' for next species."))
+                    "<br>", "<br>",
+                    "Click 'New pollinator' or hit 'Arrow up' for next species."))
         })
         
         observeEvent(input$submit, {
