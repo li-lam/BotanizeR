@@ -1357,7 +1357,7 @@ shinyServer(function(input, output, session) {
                 "Click 'New Pollinator' or hit 'Arrow up' for next species."))
         })
         
-        updateTextInput(session, "sp_answer", "Species name", value = "")
+        updateTextInput(session, "sp_answer", "Pollinator Name", value = "")
         
         # setting back answer text
         output$real_answer_print <- renderText("")
