@@ -130,7 +130,9 @@ image_ukplantatlas <- FALSE
 # include the species names in their file names using " " or "_" to delimit 
 # genus and epithet.
 
-image_folders <- c("images/Beetle Ladybug", "images/Adelphocoris lineolatus")
+image_folders <- c("images/Ant", "images/Aphid", "images/Bee", "images/Beetle", "images/Butterfly", "images/Dragonfly",
+                   "images/Fly", "images/Grasshopper", "images/Hover Fly", 
+                   "images/Moth", "images/True Bug", "images/Wasp")
 
 
 ### Images from image link columns
