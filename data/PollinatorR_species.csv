@@ -1,3 +1,13 @@
 NAMNR,TAXONNAME,SPECIES,GENUS,COUNT,SCORE,ATTEMPTS,INCLUDE
-NA,Adalia bipunctata,Ladybug,BeetleGenus,0,0,0,1
-NA,Adelphocoris lineolatus,Adelphocoris lineolatus,Adelphocoris,0,0,0,1
+NA,Ant,Ant,Ant,0,0,0,1
+NA,Aphid,Aphid,Aphid,0,0,0,1
+NA,Bee,Bee,Bee,0,0,0,1
+NA,Beetle,Beetle,Beetle,0,0,0,1
+NA,Butterfly,Butterfly,Butterfly,0,0,0,1
+NA,Dragonfly,Dragonfly,Dragonfly,0,0,0,1
+NA,Fly,Fly,Fly,0,0,0,1
+NA,Grasshopper,Grasshopper,Grasshopper,0,0,0,1
+NA,Hover Fly,Hover Fly,Hover Fly,0,0,0,1
+NA,Moth,Moth,Moth,0,0,0,1
+NA,True Bug,True Bug,True Bug,0,0,0,1
+NA,Wasp,Wasp,Wasp,0,0,0,1
