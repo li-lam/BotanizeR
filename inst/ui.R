@@ -33,21 +33,17 @@ navbarPage(title = div(
                      color:white;
                      font-weight:bold;
                      padding-top:14px">
-        BotanizeR</div>'),
+        PollinatorR</div>'),
   # Team logo 
   tags$script(
     HTML(
       paste0("var header = $('.navbar > .container-fluid');",
              "header.append('<div style=\"float:right\">",
-             "<a href=\"https://www.uni-goettingen.de/en/128741.html\"",
+      
              "target=\"_blank\">",
-             "<img src=\"biodiv_gottingen_logo.png\" alt=\"alt\" ",
+             "<img src=\"UC_logo.jpg\" alt=\"alt\" ",
              "style=\"float:right; height:80px;padding-top:10px;\"> </a>",
-             "<a href=\"https://twitter.com/intent/tweet?text=",
-             "Do%20you%20want%20to%20practise%20your%20plant%20identification",
-             "%20skills?%20Try%20out%20the%20%23BotanizeR%20Shiny%20app%20at:",
-             "%20&url=", BotanizeR_URL, 
-             "\" target=\"_blank\"><img src=\"twitter_bird_logo.png\" ",
+            
              "alt=\"alt\" style=\"float:right; height:35px;padding-top:10px;",
              "padding-right:20px;\"> </a></div>');console.log(header)"))),
   tags$style(style = 'position:absolute; right:42px;'),
@@ -91,7 +87,7 @@ navbarPage(title = div(
     ))))
 ),
 theme = shinytheme("flatly"),
-windowTitle = "BotanizeR",
+windowTitle = "PollinatorR",
 selected = h1(id = "panel2", "Quiz"),
 
 ## Species list ----------------------------------------------------------------
@@ -99,9 +95,9 @@ tabPanel(h1(id = "panel1", "Species"),
          fluidRow(column(3,
                          em(uiOutput("select_plant")),
                          actionButton("previous_plant", 
-                                      label = "Previous species"),
+                                      label = "Previous"),
                          actionButton("next_plant", 
-                                      label = "Next species"),
+                                      label = "Next"),
                          # tags$head(tags$script(HTML(js_pr_next))),
                          br(),
                          br(),
@@ -126,7 +122,7 @@ tabPanel(h1(id = "panel1", "Species"),
                 br()
          ),
          column(3,
-                htmlOutput("selected_sp_name"),
+#                htmlOutput("selected_sp_name"),
                 br(),
                 htmlOutput("selected_sp_description"),
                 br(),
@@ -139,11 +135,11 @@ tabPanel(
   h1(id = "panel2", "Quiz"),
   fluidRow(#useShinyjs(),  # Set up shinyjs
     column(3,
-           br(),
+#           br(),
            uiOutput(outputId = "quiz_options"),
-           br(),
+#           br(),
            uiOutput(outputId = "quiz_options_maps"),
-           br(),
+#           br(),
            tags$script(' $(document).on("keydown", function (e) {
                             Shiny.onInputChange("lastkeypresscode", e.keyCode);
                          });
@@ -159,7 +155,15 @@ tabPanel(
            tags$head(tags$script(src = "BotanizeR_buttons.js")),
            actionButton("submit", "Submit"),
            actionButton("real_answer", "Answer"),
-           actionButton("newplant", "New plant"),
+           actionButton("newplant", "New Pollinator"),
+           
+           
+           br(),
+           br(),
+           actionButton("sumstats_button", "Statistics"),
+           
+           
+           
            div(style = "height:30px")
     ),
     
@@ -176,8 +180,8 @@ tabPanel(
     # Third part with other indices
     column(3,
            br(),
-           actionButton("sumstats_button", "Statistics"),
-           actionButton("upanddown_button", "Upload/Download progress"),
+ #          actionButton("sumstats_button", "Statistics"),
+ #          actionButton("upanddown_button", "Upload/Download progress"),
            br(),br(),br(),
            htmlOutput("quiz_sp_description"),
            br(),
