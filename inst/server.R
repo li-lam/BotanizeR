@@ -1353,8 +1353,8 @@ shinyServer(function(input, output, session) {
                 "Mark your answer and click 'Submit' or hit 'Enter'!",
                 "<br>","<br>",
                 "Click 'Answer' or hit 'Arrow down' to retrieve answer.",
-                "<br>", 
-                "Click 'New pollinator' or hit 'Arrow up' for next species."))
+                "<br>","<br>",
+                "Click 'New Pollinator' or hit 'Arrow up' for next species."))
         })
         
         updateTextInput(session, "sp_answer", "Species name", value = "")
@@ -1610,7 +1610,7 @@ shinyServer(function(input, output, session) {
                     "<br>","<br>",
                     "Click 'Answer' or hit 'Arrow down' to retrieve answer.",
                     "<br>", "<br>",
-                    "Click 'New pollinator' or hit 'Arrow up' for next species."))
+                    "Click 'New Pollinator' or hit 'Arrow up' for next species."))
         })
         
         observeEvent(input$submit, {
@@ -1683,11 +1683,13 @@ shinyServer(function(input, output, session) {
                 
                 tryagain <- "Try Again."
 #                output$answer_status <- renderUI(HTML(paste0(
-#                    "<font color=\"#FF0000\">", tryagain,
+#                    "<font color=\"#FF0000\">", char_diff,
 #                    "</font><font color=\"#00CC00\"><br>",
 #                    genus_correct, "</font></br>")))
                 
-                
+     
+
+               
                 output$answer_status <- renderUI(HTML(paste0(
                   "<font color=\"#FF0000\">", tryagain,
                   "</font></br>")))
